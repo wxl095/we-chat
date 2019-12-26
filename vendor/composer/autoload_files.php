@@ -6,6 +6,6 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    '37f49048110037f83849908ade6c9af3' => $baseDir . '/SendRequest.php',
-    'a35fd0663f42275b2843de74e412d87c' => $baseDir . '/OfficialAccounts.php',
+    'b8636ae0f0a33e797c6bd5482e080328' => $baseDir . '/../SendRequest.php',
+    '1321c59e374a35842ef2340fdc32cc94' => $baseDir . '/../OfficialAccounts.php',
 );

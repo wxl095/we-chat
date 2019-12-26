@@ -15,8 +15,8 @@
   },
   "autoload": {
     "files": [
-      "SendRequest.php",
-      "OfficialAccounts.php"
+      "../SendRequest.php",
+      "../OfficialAccounts.php"
     ]
   }
 }
