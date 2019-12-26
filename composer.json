@@ -9,7 +9,7 @@
       "email": "17600112402@qq.com"
     }
   ],
-  "minimum-stability": "dev",
+  "minimum-stability": "stable",
   "require": {
     "ext-json": "*",
     "ext-redis": "*"
