@@ -1,6 +1,5 @@
 <?php
 
-include './SendRequest.php';
 
 class OfficialAccounts
 {
