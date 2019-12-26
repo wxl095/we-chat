@@ -7,4 +7,5 @@ $baseDir = dirname($vendorDir);
 
 return array(
     '37f49048110037f83849908ade6c9af3' => $baseDir . '/SendRequest.php',
+    'a35fd0663f42275b2843de74e412d87c' => $baseDir . '/OfficialAccounts.php',
 );
