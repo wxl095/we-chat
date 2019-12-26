@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0a7ad103-3cdd-4ee3-b991-8ee252428f22" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +96,7 @@
       <option name="presentableId" value="Default" />
       <updated>1577260519453</updated>
       <workItem from="1577260520620" duration="5653000" />
-      <workItem from="1577322417238" duration="11749000" />
+      <workItem from="1577322417238" duration="12080000" />
     </task>
     <task id="LOCAL-00001" summary="wxl">
       <created>1577342297260</created>
@@ -104,7 +105,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577342297260</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="wxl">
+      <created>1577343412143</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1577343412143</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,10 +148,10 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2570" y="204" width="610" height="619" key="#index.php/0.0.1920.1032/1920.0.1920.1080@1920.0.1920.1080" timestamp="1577327416599" />
-    <state x="2471" y="110" width="807" height="807" key="CommitChangelistDialog2" timestamp="1577342297184">
+    <state x="2471" y="110" width="807" height="807" key="CommitChangelistDialog2" timestamp="1577343412076">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2471" y="110" width="807" height="807" key="CommitChangelistDialog2/0.0.1920.1032/1920.0.1920.1080@1920.0.1920.1080" timestamp="1577342297184" />
+    <state x="2471" y="110" width="807" height="807" key="CommitChangelistDialog2/0.0.1920.1032/1920.0.1920.1080@1920.0.1920.1080" timestamp="1577343412076" />
     <state x="2660" y="269" width="424" height="480" key="FileChooserDialogImpl" timestamp="1577342052950">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
