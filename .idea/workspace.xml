@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="0a7ad103-3cdd-4ee3-b991-8ee252428f22" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OfficialAccounts.php" beforeDir="false" afterPath="$PROJECT_DIR$/OfficialAccounts.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OfficialAccounts.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/OfficialAccounts.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SendRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/SendRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +52,9 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/core" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
@@ -96,7 +102,7 @@
       <option name="presentableId" value="Default" />
       <updated>1577260519453</updated>
       <workItem from="1577260520620" duration="5653000" />
-      <workItem from="1577322417238" duration="18232000" />
+      <workItem from="1577322417238" duration="18960000" />
     </task>
     <task id="LOCAL-00001" summary="wxl">
       <created>1577342297260</created>
@@ -168,7 +174,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577350315538</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="wxl">
+      <created>1577351647845</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1577351647845</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -204,30 +217,30 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2570" y="204" width="610" height="619" key="#index.php/0.0.1920.1032/1920.0.1920.1080@1920.0.1920.1080" timestamp="1577327416599" />
-    <state x="2471" y="110" width="807" height="807" key="CommitChangelistDialog2" timestamp="1577351638297">
+    <state x="2471" y="110" width="807" height="807" key="CommitChangelistDialog2" timestamp="1577351647787">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2471" y="110" width="807" height="807" key="CommitChangelistDialog2/0.0.1920.1032/1920.0.1920.1080@1920.0.1920.1080" timestamp="1577351638297" />
+    <state x="2471" y="110" width="807" height="807" key="CommitChangelistDialog2/0.0.1920.1032/1920.0.1920.1080@1920.0.1920.1080" timestamp="1577351647787" />
     <state x="2660" y="269" width="424" height="480" key="FileChooserDialogImpl" timestamp="1577342052950">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2660" y="269" width="424" height="480" key="FileChooserDialogImpl/0.0.1920.1032/1920.0.1920.1080@1920.0.1920.1080" timestamp="1577342052950" />
-    <state width="1872" height="272" key="GridCell.Tab.0.bottom" timestamp="1577339065266">
+    <state width="1872" height="272" key="GridCell.Tab.0.bottom" timestamp="1577352369441">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1872" height="272" key="GridCell.Tab.0.bottom/0.0.1920.1032/1920.0.1920.1080@1920.0.1920.1080" timestamp="1577339065266" />
-    <state width="1872" height="272" key="GridCell.Tab.0.center" timestamp="1577339065266">
+    <state width="1872" height="272" key="GridCell.Tab.0.bottom/0.0.1920.1032/1920.0.1920.1080@1920.0.1920.1080" timestamp="1577352369441" />
+    <state width="1872" height="272" key="GridCell.Tab.0.center" timestamp="1577352369441">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1872" height="272" key="GridCell.Tab.0.center/0.0.1920.1032/1920.0.1920.1080@1920.0.1920.1080" timestamp="1577339065266" />
-    <state width="1872" height="272" key="GridCell.Tab.0.left" timestamp="1577339065266">
+    <state width="1872" height="272" key="GridCell.Tab.0.center/0.0.1920.1032/1920.0.1920.1080@1920.0.1920.1080" timestamp="1577352369441" />
+    <state width="1872" height="272" key="GridCell.Tab.0.left" timestamp="1577352369441">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1872" height="272" key="GridCell.Tab.0.left/0.0.1920.1032/1920.0.1920.1080@1920.0.1920.1080" timestamp="1577339065266" />
-    <state width="1872" height="272" key="GridCell.Tab.0.right" timestamp="1577339065266">
+    <state width="1872" height="272" key="GridCell.Tab.0.left/0.0.1920.1032/1920.0.1920.1080@1920.0.1920.1080" timestamp="1577352369441" />
+    <state width="1872" height="272" key="GridCell.Tab.0.right" timestamp="1577352369441">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1872" height="272" key="GridCell.Tab.0.right/0.0.1920.1032/1920.0.1920.1080@1920.0.1920.1080" timestamp="1577339065266" />
+    <state width="1872" height="272" key="GridCell.Tab.0.right/0.0.1920.1032/1920.0.1920.1080@1920.0.1920.1080" timestamp="1577352369441" />
     <state x="2700" y="329" width="349" height="369" key="NewPhpClassDialog" timestamp="1577262032418">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
@@ -236,10 +249,10 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2695" y="441" width="359" height="149" key="NewPhpFileDialog/0.0.1920.1032/1920.0.1920.1080@1920.0.1920.1080" timestamp="1577347770738" />
-    <state x="2475" y="252" width="800" height="524" key="Vcs.Push.Dialog.v2" timestamp="1577350316529">
+    <state x="2475" y="252" width="800" height="524" key="Vcs.Push.Dialog.v2" timestamp="1577351649372">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2475" y="252" width="800" height="524" key="Vcs.Push.Dialog.v2/0.0.1920.1032/1920.0.1920.1080@1920.0.1920.1080" timestamp="1577350316529" />
+    <state x="2475" y="252" width="800" height="524" key="Vcs.Push.Dialog.v2/0.0.1920.1032/1920.0.1920.1080@1920.0.1920.1080" timestamp="1577351649372" />
     <state x="2652" y="143" width="539" height="742" key="com.jetbrains.php.test.PhpNewTestDialog" timestamp="1577327181770">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>

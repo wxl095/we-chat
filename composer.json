@@ -14,9 +14,8 @@
     "ext-json": "*"
   },
   "autoload": {
-    "files": [
-      "../SendRequest.php",
-      "../OfficialAccounts.php"
-    ]
+    "psr-4": {
+      "core\\": "core"
+    }
   }
 }
