@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0a7ad103-3cdd-4ee3-b991-8ee252428f22" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/we-chat.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OfficialAccounts.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SendRequest.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.2">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/composer" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="1VSxuOoC3zAKXaokgdbHqlB9xi6" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.jetbrains.php.phpunit.codeGeneration.PhpNewTestDialog.defaultLibrary" value="PHPUnit" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../myWechat" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager" selected="PHP Script.index.php">
+    <configuration name="OfficialAccountsTest.testVerification" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <CommandLine>
+        <PhpTestInterpreterSettings>
+          <option name="interpreterName" value="PHP 7.2" />
+        </PhpTestInterpreterSettings>
+      </CommandLine>
+      <TestRunner class="OfficialAccountsTest" file="$PROJECT_DIR$/OfficialAccountsTest.php" method="testVerification" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="index.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/index.php">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHP Script.index.php" />
+        <item itemvalue="PHPUnit.OfficialAccountsTest.testVerification" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0a7ad103-3cdd-4ee3-b991-8ee252428f22" name="Default Changelist" comment="" />
+      <created>1577260519453</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1577260519453</updated>
+      <workItem from="1577260520620" duration="5653000" />
+      <workItem from="1577322417238" duration="10623000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2465" y="171" width="824" height="680" key="#CLI_Interpreters" timestamp="1577327243657">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2465" y="171" width="824" height="680" key="#CLI_Interpreters/0.0.1920.1032/1920.0.1920.1080@1920.0.1920.1080" timestamp="1577327243657" />
+    <state x="2475" y="177" width="800" height="673" key="#Deployment" timestamp="1577341815478">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2475" y="177" width="800" height="673" key="#Deployment/0.0.1920.1032/1920.0.1920.1080@1920.0.1920.1080" timestamp="1577341815478" />
+    <state x="2535" y="118" width="694" height="791" key="#OfficialAccountsTest.testVerification" timestamp="1577327251031">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2535" y="118" width="694" height="791" key="#OfficialAccountsTest.testVerification/0.0.1920.1032/1920.0.1920.1080@1920.0.1920.1080" timestamp="1577327251031" />
+    <state x="2552" y="102" width="637" height="819" key="#PHP" timestamp="1577327415184">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2552" y="102" width="637" height="819" key="#PHP/0.0.1920.1032/1920.0.1920.1080@1920.0.1920.1080" timestamp="1577327415184" />
+    <state x="2613" y="265" width="524" height="498" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1577328254335">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2613" y="265" width="524" height="498" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1032/1920.0.1920.1080@1920.0.1920.1080" timestamp="1577328254335" />
+    <state x="2570" y="204" width="610" height="619" key="#index.php" timestamp="1577327416599">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2570" y="204" width="610" height="619" key="#index.php/0.0.1920.1032/1920.0.1920.1080@1920.0.1920.1080" timestamp="1577327416599" />
+    <state x="2471" y="110" width="807" height="807" key="CommitChangelistDialog2" timestamp="1577342247798">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2471" y="110" width="807" height="807" key="CommitChangelistDialog2/0.0.1920.1032/1920.0.1920.1080@1920.0.1920.1080" timestamp="1577342247798" />
+    <state x="2660" y="269" width="424" height="480" key="FileChooserDialogImpl" timestamp="1577342052950">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2660" y="269" width="424" height="480" key="FileChooserDialogImpl/0.0.1920.1032/1920.0.1920.1080@1920.0.1920.1080" timestamp="1577342052950" />
+    <state width="1872" height="272" key="GridCell.Tab.0.bottom" timestamp="1577339065266">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1872" height="272" key="GridCell.Tab.0.bottom/0.0.1920.1032/1920.0.1920.1080@1920.0.1920.1080" timestamp="1577339065266" />
+    <state width="1872" height="272" key="GridCell.Tab.0.center" timestamp="1577339065266">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1872" height="272" key="GridCell.Tab.0.center/0.0.1920.1032/1920.0.1920.1080@1920.0.1920.1080" timestamp="1577339065266" />
+    <state width="1872" height="272" key="GridCell.Tab.0.left" timestamp="1577339065266">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1872" height="272" key="GridCell.Tab.0.left/0.0.1920.1032/1920.0.1920.1080@1920.0.1920.1080" timestamp="1577339065266" />
+    <state width="1872" height="272" key="GridCell.Tab.0.right" timestamp="1577339065266">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1872" height="272" key="GridCell.Tab.0.right/0.0.1920.1032/1920.0.1920.1080@1920.0.1920.1080" timestamp="1577339065266" />
+    <state x="2700" y="329" width="349" height="369" key="NewPhpClassDialog" timestamp="1577262032418">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2700" y="329" width="349" height="369" key="NewPhpClassDialog/0.0.1920.1032/1920.0.1920.1080@1920.0.1920.1080" timestamp="1577262032418" />
+    <state x="2695" y="441" width="359" height="145" key="NewPhpFileDialog" timestamp="1577327303030">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2695" y="441" width="359" height="145" key="NewPhpFileDialog/0.0.1920.1032/1920.0.1920.1080@1920.0.1920.1080" timestamp="1577327303030" />
+    <state x="2652" y="143" width="539" height="742" key="com.jetbrains.php.test.PhpNewTestDialog" timestamp="1577327181770">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2652" y="143" width="539" height="742" key="com.jetbrains.php.test.PhpNewTestDialog/0.0.1920.1032/1920.0.1920.1080@1920.0.1920.1080" timestamp="1577327181770" />
+    <state x="2777" y="247" width="196" height="529" key="ftp.server.browser" timestamp="1577341811187">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2777" y="247" width="196" height="529" key="ftp.server.browser/0.0.1920.1032/1920.0.1920.1080@1920.0.1920.1080" timestamp="1577341811187" />
+  </component>
+</project>
