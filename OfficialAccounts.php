@@ -15,7 +15,7 @@ class OfficialAccounts
      * @param string $secret
      * @param string $token
      */
-    public function __construct(string $appId, string $secret, string $token='wxl')
+    public function __construct(string $appId, string $secret, string $token = 'wxl')
     {
         $this->appId = $appId;
         $this->secret = $secret;
@@ -110,6 +110,11 @@ class OfficialAccounts
             return false;
         }
         return true;
+    }
+
+    public function response()
+    {
+        file_put_contents('./test.txt', json_encode($_POST));
     }
 
     /**

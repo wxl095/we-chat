@@ -1,14 +1,22 @@
 {
-    "name": "wxl095/we-chat",
-    "description": "个人学习项目",
-    "type": "library",
-    "license": "apache-2.0",
-    "authors": [
-        {
-            "name": "wxl",
-            "email": "297750182@qq.com"
-        }
-    ],
-    "minimum-stability": "dev",
-    "require": {}
+  "name": "wxl095/we-chat",
+  "description": "个人学习项目",
+  "type": "library",
+  "license": "apache-2.0",
+  "authors": [
+    {
+      "name": "wxl",
+      "email": "297750182@qq.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "ext-json": "*"
+  },
+  "autoload": {
+    "files": [
+      "SendRequest.php",
+      "OfficialAccounts.php"
+    ]
+  }
 }
