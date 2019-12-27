@@ -12,7 +12,9 @@
   "minimum-stability": "dev",
   "require": {
     "ext-json": "*",
-    "ext-curl": "*"
+    "ext-curl": "*",
+    "ext-libxml": "*",
+    "ext-simplexml": "*"
   },
   "autoload": {
     "psr-4": {

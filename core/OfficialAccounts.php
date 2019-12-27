@@ -112,9 +112,15 @@ class OfficialAccounts
         return true;
     }
 
-    public function response()
+    public function responseMessage()
     {
-        file_put_contents('./test.txt', json_encode($_POST));
+        // 防御XML注入攻击
+        libxml_disable_entity_loader(true);
+        $xml = file_get_contents("php://input");
+        $object = simplexml_load_string($xml, 'SimpleXMLElement', LIBXML_NOCDATA);
+        switch ($object->MsgType) {
+            case 'subscribe':
+        }
     }
 
     /**
