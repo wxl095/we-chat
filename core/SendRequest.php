@@ -1,5 +1,5 @@
 <?php
-
+namespace wxl095\we_chat\core;
 /**
  * Created by PhpStorm
  * User: wxl

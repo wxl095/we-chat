@@ -2,20 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a7ad103-3cdd-4ee3-b991-8ee252428f22" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/we-chat.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/we-chat.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/autoload.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_real.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/OfficialAccounts.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/OfficialAccounts.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/SendRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/SendRequest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +99,7 @@
       <updated>1577260519453</updated>
       <workItem from="1577260520620" duration="5653000" />
       <workItem from="1577322417238" duration="19206000" />
-      <workItem from="1577409207674" duration="519000" />
+      <workItem from="1577409207674" duration="2056000" />
     </task>
     <task id="LOCAL-00001" summary="wxl">
       <created>1577342297260</created>
@@ -194,7 +185,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577352384518</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="wxl">
+      <created>1577409740550</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1577409740550</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -230,10 +228,10 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2570" y="204" width="610" height="619" key="#index.php/0.0.1920.1032/1920.0.1920.1080@1920.0.1920.1080" timestamp="1577327416599" />
-    <state x="2471" y="110" width="807" height="807" key="CommitChangelistDialog2" timestamp="1577352384473">
+    <state x="2471" y="110" width="807" height="807" key="CommitChangelistDialog2" timestamp="1577411269682">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2471" y="110" width="807" height="807" key="CommitChangelistDialog2/0.0.1920.1032/1920.0.1920.1080@1920.0.1920.1080" timestamp="1577352384473" />
+    <state x="2471" y="110" width="807" height="807" key="CommitChangelistDialog2/0.0.1920.1032/1920.0.1920.1080@1920.0.1920.1080" timestamp="1577411269682" />
     <state x="2660" y="269" width="424" height="480" key="FileChooserDialogImpl" timestamp="1577352557162">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
@@ -262,10 +260,10 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2695" y="441" width="359" height="149" key="NewPhpFileDialog/0.0.1920.1032/1920.0.1920.1080@1920.0.1920.1080" timestamp="1577347770738" />
-    <state x="2475" y="252" width="800" height="524" key="Vcs.Push.Dialog.v2" timestamp="1577352386060">
+    <state x="2475" y="252" width="800" height="524" key="Vcs.Push.Dialog.v2" timestamp="1577409742619">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2475" y="252" width="800" height="524" key="Vcs.Push.Dialog.v2/0.0.1920.1032/1920.0.1920.1080@1920.0.1920.1080" timestamp="1577352386060" />
+    <state x="2475" y="252" width="800" height="524" key="Vcs.Push.Dialog.v2/0.0.1920.1032/1920.0.1920.1080@1920.0.1920.1080" timestamp="1577409742619" />
     <state x="2652" y="143" width="539" height="742" key="com.jetbrains.php.test.PhpNewTestDialog" timestamp="1577327181770">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
