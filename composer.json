@@ -16,7 +16,7 @@
   },
   "autoload": {
     "psr-4": {
-      "wxl095\\we_chat\\core\\": "wxl095/we-chat/core"
+      "wxl095\\we_chat\\core\\": "core"
     }
   }
 }
