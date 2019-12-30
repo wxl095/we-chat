@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a7ad103-3cdd-4ee3-b991-8ee252428f22" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/core/reply/Message.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/reply/Text.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/Event.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/Event.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/OfficialAccounts.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/OfficialAccounts.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/reply/Message.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/reply/Message.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/reply/Text.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/reply/Text.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +109,8 @@
       <workItem from="1577433127467" duration="146000" />
       <workItem from="1577433285556" duration="80000" />
       <workItem from="1577433372417" duration="1938000" />
-      <workItem from="1577668156782" duration="8387000" />
+      <workItem from="1577668156782" duration="10136000" />
+      <workItem from="1577693656823" duration="670000" />
     </task>
     <task id="LOCAL-00001" summary="wxl">
       <created>1577342297260</created>
@@ -218,7 +217,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577433438634</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="wxl">
+      <created>1577686882072</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1577686882072</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -254,10 +260,10 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2570" y="204" width="610" height="619" key="#index.php/0.0.1920.1032/1920.0.1920.1080@1920.0.1920.1080" timestamp="1577327416599" />
-    <state x="2471" y="110" width="807" height="807" key="CommitChangelistDialog2" timestamp="1577438939760">
+    <state x="2471" y="110" width="807" height="807" key="CommitChangelistDialog2" timestamp="1577686881969">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2471" y="110" width="807" height="807" key="CommitChangelistDialog2/0.0.1920.1032/1920.0.1920.1080@1920.0.1920.1080" timestamp="1577438939760" />
+    <state x="2471" y="110" width="807" height="807" key="CommitChangelistDialog2/0.0.1920.1032/1920.0.1920.1080@1920.0.1920.1080" timestamp="1577686881969" />
     <state x="2660" y="269" width="424" height="480" key="FileChooserDialogImpl" timestamp="1577352557162">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
@@ -290,10 +296,10 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2369" y="151" key="SettingsEditor/0.0.1920.1032/1920.0.1920.1080@1920.0.1920.1080" timestamp="1577433364389" />
-    <state x="2475" y="252" width="800" height="524" key="Vcs.Push.Dialog.v2" timestamp="1577438941546">
+    <state x="2475" y="252" width="800" height="524" key="Vcs.Push.Dialog.v2" timestamp="1577686884683">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2475" y="252" width="800" height="524" key="Vcs.Push.Dialog.v2/0.0.1920.1032/1920.0.1920.1080@1920.0.1920.1080" timestamp="1577438941546" />
+    <state x="2475" y="252" width="800" height="524" key="Vcs.Push.Dialog.v2/0.0.1920.1032/1920.0.1920.1080@1920.0.1920.1080" timestamp="1577686884683" />
     <state x="2652" y="143" width="539" height="742" key="com.jetbrains.php.test.PhpNewTestDialog" timestamp="1577327181770">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>

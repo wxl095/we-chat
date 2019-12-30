@@ -8,12 +8,12 @@ abstract class Message
 {
     protected $xmlStr;
 
-    protected function create()
+    protected function create(string &$toUserName, string &$fromUserName)
     {
 
     }
 
-    public function reply()
+    public function reply(string &$toUserName, string &$fromUserName)
     {
     }
 }

@@ -8,19 +8,21 @@ use wxl095\we_chat\core\reply\Text;
 
 class Event
 {
-    private $xmlObject = null;
+    private $xmlArray = array();
 
-    public function __construct($xmlObject)
+    public function __construct($xmlArray)
     {
-        $event = strtolower($xmlObject->Event);
-        $this->xmlObject = $xmlObject;
+        $event = strtolower($xmlArray['Event']);
+        $this->xmlArray = $xmlArray;
         $this->$event();
+
     }
 
     public function subscribe()
     {
+        file_put_contents('./debug.txt', date('Y-m-d H:i:s') . json_encode($this->xmlArray));
         $textMessage = new Text();
-        $textMessage->reply();
+        $textMessage->reply($this->xmlArray['FromUserName'], $this->xmlArray['ToUserName']);
     }
 
     public function scan()

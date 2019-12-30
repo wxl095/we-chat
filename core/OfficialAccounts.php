@@ -117,10 +117,13 @@ class OfficialAccounts
         // 防御XML注入攻击
         libxml_disable_entity_loader(true);
         $xml = file_get_contents("php://input");
-        $object = simplexml_load_string($xml, 'SimpleXMLElement', LIBXML_NOCDATA);
-        switch ($object->MsgType) {
-            case 'subscribe':
-                new Event($object);
+        $xmlArray = json_decode(json_encode(simplexml_load_string($xml, 'SimpleXMLElement', LIBXML_NOCDATA)), true);
+        file_put_contents('./test.txt', date('Y-m-d H:i:s') . json_encode($xmlArray) . "\r\n");
+
+        switch ($xmlArray['MsgType']) {
+            case 'event':
+                new Event($xmlArray);
+                break;
         }
     }
 

@@ -6,7 +6,7 @@ namespace wxl095\we_chat\core\reply;
 
 class Text extends Message
 {
-    private $xmlStr = "<xml>
+    protected $xmlStr = "<xml>
                           <ToUserName><![CDATA[%s]]></ToUserName>
                           <FromUserName><![CDATA[%s]]></FromUserName>
                           <CreateTime>%d</CreateTime>
@@ -14,13 +14,14 @@ class Text extends Message
                           <Content><![CDATA[%s]]></Content>
                     </xml>";
 
-    protected function create()
+    protected function create(string &$toUserName, string &$fromUserName)
     {
-        return sprintf($this->xmlStr, 'oOlpbwGxscJ-q-fL9YhnZHoo0VCw', 'wx95525cf2481f57b2', time(), '欢迎关注测试账号');
+        file_put_contents('./reply.txt', sprintf($this->xmlStr, $toUserName, $fromUserName, time(), '欢迎关注测试账号'));
+        return sprintf($this->xmlStr, $toUserName, $fromUserName, time(), '欢迎关注测试账号');
     }
 
-    public function reply()
+    public function reply(string &$toUserName, string &$fromUserName)
     {
-        echo $this->create();
+        echo $this->create($toUserName, $fromUserName);
     }
 }
