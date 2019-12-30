@@ -120,6 +120,7 @@ class OfficialAccounts
         $object = simplexml_load_string($xml, 'SimpleXMLElement', LIBXML_NOCDATA);
         switch ($object->MsgType) {
             case 'subscribe':
+                new Event($object);
         }
     }
 
