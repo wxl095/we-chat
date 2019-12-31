@@ -1,5 +1,7 @@
 <?php
 namespace wxl095\we_chat\core;
+use Exception;
+
 /**
  * Created by PhpStorm
  * User: wxl
