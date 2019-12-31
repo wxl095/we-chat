@@ -174,6 +174,7 @@ class OfficialAccounts
      * @param string $file_name
      * @param string $save_path
      * @return bool
+     * @throws \Exception
      */
     public function saveQrCode(string $ticket, string $file_name = '', string $save_path = './')
     {
