@@ -61,7 +61,7 @@ class SendRequest
 	{
 		$this->setRequest();
 		//要获取的URL。使用curl_init（）初始化会话时也可以设置此项。
-		curl_setopt($this->request, CURLOPT_URL, $this->url . http_build_query($this->data));
+		curl_setopt($this->request, CURLOPT_URL, $this->url . http_build_query($this->data?:[]));
 		return $this->exec();
 	}
 

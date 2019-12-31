@@ -2,6 +2,9 @@
 
 namespace wxl095\we_chat\core;
 
+use ErrorException;
+use Redis;
+
 class OfficialAccounts
 {
     const ErrorLogFile = __DIR__ . '/OfficialAccountsError.log';
@@ -138,14 +141,51 @@ class OfficialAccounts
     }
 
 
-    public function getQRLimitScene(int $scene_id)
+    /**
+     * 永久二维码的整型参数值
+     * @param $scene_param
+     * @param string $type
+     * @return bool|array
+     * @throws ErrorException
+     */
+    public function getQRLimitScene($scene_param, $type = 'int')
     {
         $url = 'https://api.weixin.qq.com/cgi-bin/qrcode/create?access_token=%s';
         $accessToken = $this->getAccessToken();
         $url = sprintf($url, $accessToken);
-        $data = '{"action_name": "QR_LIMIT_SCENE", "action_info": {"scene": {"scene_id": %u}}}';
-        $data = sprintf($data, $scene_id);
+        if ($type == 'int') {
+            $data = '{"action_name": "QR_LIMIT_SCENE", "action_info": {"scene": {"scene_id": %u}}}';
+        }
+        if ($type == 'str') {
+            $data = '{"action_name": "QR_LIMIT_STR_SCENE", "action_info": {"scene": {"scene_str": "%s"}}}';
+        }
+        $data = sprintf($data, $scene_param);
         $request = new SendRequest($url, $data);
-        $result = $request->post();
+        $result = json_decode($request->post(), true);
+        if (isset($result['ticket']) && isset($result['url'])) {
+            return $result;
+        }
+        return false;
+    }
+
+    /**
+     * 保存二维码
+     * @param string $ticket
+     * @param string $file_name
+     * @param string $save_path
+     * @return bool
+     */
+    public function saveQrCode(string $ticket, string $file_name = '', string $save_path = './')
+    {
+        $url = 'https://mp.weixin.qq.com/cgi-bin/showqrcode?ticket=%s';
+        $url = sprintf($url, urlencode($ticket));
+        $request = new SendRequest($url);
+        $path = '%s%s.jpeg';
+        $path = sprintf($path, $save_path, $file_name);
+        if (file_put_contents($path, $request->get())) {
+            return true;
+        } else {
+            return false;
+        }
     }
 }
