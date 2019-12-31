@@ -118,7 +118,6 @@ class OfficialAccounts
         libxml_disable_entity_loader(true);
         $xml = file_get_contents("php://input");
         $xmlArray = json_decode(json_encode(simplexml_load_string($xml, 'SimpleXMLElement', LIBXML_NOCDATA)), true);
-        file_put_contents('./test.txt', date('Y-m-d H:i:s') . json_encode($xmlArray) . "\r\n");
 
         switch ($xmlArray['MsgType']) {
             case 'event':
@@ -136,5 +135,17 @@ class OfficialAccounts
     private function writeLog(string $title, string $errorCode, string $errorMessage)
     {
         file_put_contents(self::ErrorLogFile, date('Y-m-d H:i:s') . '  appid为：' . $this->appId . '的账号' . $title . '  errorCode:' . $errorCode . "\r\n" . 'errorMessage:' . $errorMessage . "\r\n\r\n");
+    }
+
+
+    public function getQRLimitScene(int $scene_id)
+    {
+        $url = 'https://api.weixin.qq.com/cgi-bin/qrcode/create?access_token=%s';
+        $accessToken = $this->getAccessToken();
+        $url = sprintf($url, $accessToken);
+        $data = '{"action_name": "QR_LIMIT_SCENE", "action_info": {"scene": {"scene_id": %u}}}';
+        $data = sprintf($data, $scene_id);
+        $request = new SendRequest($url, $data);
+        $result = $request->post();
     }
 }
