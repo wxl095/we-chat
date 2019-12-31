@@ -4,6 +4,7 @@ namespace wxl095\we_chat\core;
 
 use ErrorException;
 use Redis;
+use Exception;
 
 class OfficialAccounts
 {
@@ -147,6 +148,7 @@ class OfficialAccounts
      * @param string $type
      * @return bool|array
      * @throws ErrorException
+     * @throws Exception
      */
     public function getQRLimitScene($scene_param, $type = 'int')
     {
@@ -174,7 +176,7 @@ class OfficialAccounts
      * @param string $file_name
      * @param string $save_path
      * @return bool
-     * @throws \Exception
+     * @throws Exception
      */
     public function saveQrCode(string $ticket, string $file_name = '', string $save_path = './')
     {
