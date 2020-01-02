@@ -20,14 +20,14 @@ class Event
 
     public function subscribe()
     {
-        file_put_contents('./debug.txt', date('Y-m-d H:i:s') . json_encode($this->xmlArray));
         $textMessage = new Text();
         $textMessage->reply($this->xmlArray['FromUserName'], $this->xmlArray['ToUserName'], '欢迎关注测试账号');
     }
 
     public function scan()
     {
-
+        $textMessage = new Text();
+        $textMessage->reply($this->xmlArray['FromUserName'], $this->xmlArray['ToUserName'], "<a href='https://www.baidu.com?scene_id=" . $this->xmlArray['EventKey'] . "'>点击参与本次课程</a>");
     }
 
     public function unsubscribe()
