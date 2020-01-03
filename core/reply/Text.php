@@ -17,7 +17,7 @@ class Text extends Message
     protected function create(string &$toUserName, string &$fromUserName, $message)
     {
         file_put_contents('./reply.txt', sprintf($this->xmlStr, $toUserName, $fromUserName, time(), $message));
-        return sprintf($this->xmlStr, $toUserName, $fromUserName, time(), '欢迎关注测试账号');
+        return sprintf($this->xmlStr, $toUserName, $fromUserName, time(), $message);
     }
 
     public function reply(string &$toUserName, string &$fromUserName, $message)

@@ -10,7 +10,7 @@ class Event
 {
     private $xmlArray = array();
 
-    public function __construct($xmlArray)
+    public function __construct(&$xmlArray)
     {
         $event = strtolower($xmlArray['Event']);
         $this->xmlArray = $xmlArray;
@@ -26,8 +26,12 @@ class Event
 
     public function scan()
     {
+        file_put_contents('./event.txt', 'scan   ' . json_encode($this->xmlArray));
         $textMessage = new Text();
-        $textMessage->reply($this->xmlArray['FromUserName'], $this->xmlArray['ToUserName'], "<a href='https://www.baidu.com?scene_id=" . $this->xmlArray['EventKey'] . "'>点击参与本次课程</a>");
+        $redirect_uri = "https://www.baidu.com";
+//        $redirect_uri = urlencode("https://www.baidu.com");
+
+        $textMessage->reply($this->xmlArray['FromUserName'], $this->xmlArray['ToUserName'], "<a href='https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx95525cf2481f57b2&redirect_uri=" . $redirect_uri . "&response_type=code&scope=snsapi_userinfo&state=STATE#wechat_redirect'>点击参与本次课程</a>");
     }
 
     public function unsubscribe()
