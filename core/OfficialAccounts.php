@@ -191,4 +191,27 @@ class OfficialAccounts
             return false;
         }
     }
+
+    /**
+     * @param string $openid
+     * @param string $template_id
+     * @param string $url
+     * @param string $top_color
+     * @param array $content
+     * @throws ErrorException
+     * @throws Exception
+     */
+    public function sendTemplateMessage(string $openid, string $template_id, string $url, string $top_color, array $content)
+    {
+        $url = "https://api.weixin.qq.com/cgi-bin/message/template/send?access_token=%s";
+        $url = sprintf($url, $this->getAccessToken());
+        $data = [
+            "touser" => $openid,
+            "template_id" => $template_id,
+            "url" => $url,
+            "data" => $content
+        ];
+       $request =  new SendRequest($url, json_encode($data));
+       $request->post();
+    }
 }
