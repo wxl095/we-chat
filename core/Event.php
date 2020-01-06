@@ -22,6 +22,9 @@ class Event
     {
         $textMessage = new Text();
         $textMessage->reply($this->xmlArray['FromUserName'], $this->xmlArray['ToUserName'], '欢迎关注测试账号');
+        if (isset($this->xmlArray['EventKey'])) {
+            $this->scan();
+        }
     }
 
     public function scan()

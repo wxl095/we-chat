@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0a7ad103-3cdd-4ee3-b991-8ee252428f22" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/OfficialAccounts.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/OfficialAccounts.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/Event.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/Event.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +113,7 @@
       <workItem from="1577955402138" duration="942000" />
       <workItem from="1578015412664" duration="1148000" />
       <workItem from="1578017207550" duration="3495000" />
-      <workItem from="1578285034055" duration="1100000" />
+      <workItem from="1578285034055" duration="1519000" />
     </task>
     <task id="LOCAL-00001" summary="wxl">
       <created>1577342297260</created>
@@ -304,7 +304,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578043024749</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="增加发送模板消息方法">
+      <created>1578288509609</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1578288509609</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -341,11 +348,11 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2570" y="204" width="610" height="619" key="#index.php/0.0.1920.1032/1920.0.1920.1080@1920.0.1920.1080" timestamp="1577327416599" />
-    <state x="2471" y="110" width="807" height="807" key="CommitChangelistDialog2" timestamp="1578043024700">
+    <state x="2471" y="110" width="807" height="807" key="CommitChangelistDialog2" timestamp="1578288509469">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="551" y="105" key="CommitChangelistDialog2/0.0.1920.1032/1920.0.1920.1080@0.0.1920.1032" timestamp="1577695543238" />
-    <state x="2471" y="110" width="807" height="807" key="CommitChangelistDialog2/0.0.1920.1032/1920.0.1920.1080@1920.0.1920.1080" timestamp="1578043024700" />
+    <state x="2471" y="110" width="807" height="807" key="CommitChangelistDialog2/0.0.1920.1032/1920.0.1920.1080@1920.0.1920.1080" timestamp="1578288509469" />
     <state x="306" y="105" width="807" height="807" key="CommitChangelistDialog2/0.0.3840.1032@0.0.3840.1032" timestamp="1577945179491" />
     <state x="2660" y="269" width="424" height="480" key="FileChooserDialogImpl" timestamp="1577352557162">
       <screen x="1920" y="0" width="1920" height="1080" />
@@ -379,11 +386,11 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2369" y="151" key="SettingsEditor/0.0.1920.1032/1920.0.1920.1080@1920.0.1920.1080" timestamp="1577433364389" />
-    <state x="2475" y="252" width="800" height="524" key="Vcs.Push.Dialog.v2" timestamp="1578043026671">
+    <state x="2475" y="252" width="800" height="524" key="Vcs.Push.Dialog.v2" timestamp="1578288512119">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="555" y="241" key="Vcs.Push.Dialog.v2/0.0.1920.1032/1920.0.1920.1080@0.0.1920.1032" timestamp="1577695545527" />
-    <state x="2475" y="252" width="800" height="524" key="Vcs.Push.Dialog.v2/0.0.1920.1032/1920.0.1920.1080@1920.0.1920.1080" timestamp="1578043026671" />
+    <state x="2475" y="252" width="800" height="524" key="Vcs.Push.Dialog.v2/0.0.1920.1032/1920.0.1920.1080@1920.0.1920.1080" timestamp="1578288512119" />
     <state x="320" y="241" width="800" height="524" key="Vcs.Push.Dialog.v2/0.0.3840.1032@0.0.3840.1032" timestamp="1577945180953" />
     <state x="2652" y="143" width="539" height="742" key="com.jetbrains.php.test.PhpNewTestDialog" timestamp="1577327181770">
       <screen x="1920" y="0" width="1920" height="1080" />
