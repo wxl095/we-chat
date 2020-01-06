@@ -193,11 +193,13 @@ class OfficialAccounts
     }
 
     /**
+     * 发送模板消息
      * @param string $openid
      * @param string $template_id
      * @param string $url
      * @param string $top_color
      * @param array $content
+     * @return bool
      * @throws ErrorException
      * @throws Exception
      */
@@ -211,7 +213,12 @@ class OfficialAccounts
             "url" => $url,
             "data" => $content
         ];
-       $request =  new SendRequest($url, json_encode($data));
-       $request->post();
+        $request = new SendRequest($url, json_encode($data));
+        $result = json_decode($request->post(), true);
+        if ($result['errcode'] != 0) {
+            $this->writeLog('发送模板消息失败', $result['errcode'], $result['errmsg']);
+            return false;
+        }
+        return true;
     }
 }
