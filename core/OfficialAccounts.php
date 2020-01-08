@@ -221,4 +221,19 @@ class OfficialAccounts
         }
         return true;
     }
+
+    /**
+     * 通过openID获取用户基本信息
+     * @param string $openid
+     * @param string $language
+     * @return array
+     * @throws ErrorException
+     */
+    public function getUserInfoByOpenid(string $openid, $language = 'zh_CN'):array
+    {
+        $url = "https://api.weixin.qq.com/cgi-bin/user/info?access_token=%s&openid=%s&lang=%s";
+        $url = sprintf($url, $openid, $this->getAccessToken(), $language);
+        $request = new SendRequest($url);
+        return json_decode($request->get(), true);
+    }
 }
