@@ -15,7 +15,8 @@
     "ext-curl": "*",
     "ext-libxml": "*",
     "ext-simplexml": "*",
-    "ext-redis": "*"
+    "ext-redis": "*",
+    "ext-pdo": "*"
   },
   "autoload": {
     "psr-4": {

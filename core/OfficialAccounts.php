@@ -15,15 +15,13 @@ class OfficialAccounts
 
     /**
      * OfficialAccounts constructor.
-     * @param string $appId
-     * @param string $secret
-     * @param string $token
      */
-    public function __construct(string $appId, string $secret, string $token = 'wxl')
+    public function __construct()
     {
-        $this->appId = $appId;
-        $this->secret = $secret;
-        $this->token = $token;
+        $config = new Config();
+        $this->appId = $config->getAppId();
+        $this->secret = $config->getSecret();
+        $this->token = $config->getToken();
     }
 
     /**
@@ -64,6 +62,7 @@ class OfficialAccounts
      * 获取access_token
      * @return string
      * @throws ErrorException
+     * @throws Exception
      */
     public function getAccessToken(): string
     {
@@ -102,6 +101,7 @@ class OfficialAccounts
      * @param array $menu
      * @return bool
      * @throws ErrorException
+     * @throws Exception
      */
     public function createMenu(array $menu)
     {
@@ -109,18 +109,21 @@ class OfficialAccounts
         $request = new SendRequest("https://api.weixin.qq.com/cgi-bin/menu/create?access_token=$accessToken", json_encode($menu, JSON_UNESCAPED_UNICODE));
 
         $result = json_decode($request->post(), true);
-        if ($result['errcode'] != 0 && $result['errmsg'] != 'ok') {
+        if ($result['errcode'] != 0 && $result['errmsg'] !== 'ok') {
             $this->writeLog('自定义菜单创建失败', $result['errcode'], $result['errmsg']);
             return false;
         }
         return true;
     }
 
+    /**
+     *
+     */
     public function responseMessage()
     {
         // 防御XML注入攻击
         libxml_disable_entity_loader(true);
-        $xml = file_get_contents("php://input");
+        $xml = file_get_contents('php://input');
         $xmlArray = json_decode(json_encode(simplexml_load_string($xml, 'SimpleXMLElement', LIBXML_NOCDATA)), true);
 
         switch ($xmlArray['MsgType']) {
@@ -196,22 +199,22 @@ class OfficialAccounts
      * 发送模板消息
      * @param string $openid
      * @param string $template_id
-     * @param string $url
+     * @param string $target_url
      * @param string $top_color
      * @param array $content
      * @return bool
      * @throws ErrorException
      * @throws Exception
      */
-    public function sendTemplateMessage(string $openid, string $template_id, string $url, string $top_color, array $content)
+    public function sendTemplateMessage(string $openid, string $template_id, string $target_url, string $top_color, array $content)
     {
-        $url = "https://api.weixin.qq.com/cgi-bin/message/template/send?access_token=%s";
+        $url = 'https://api.weixin.qq.com/cgi-bin/message/template/send?access_token=%s';
         $url = sprintf($url, $this->getAccessToken());
         $data = [
-            "touser" => $openid,
-            "template_id" => $template_id,
-            "url" => $url,
-            "data" => $content
+            'touser' => $openid,
+            'template_id' => $template_id,
+            'url' => $target_url,
+            'data' => $content
         ];
         $request = new SendRequest($url, json_encode($data));
         $result = json_decode($request->post(), true);
@@ -228,10 +231,11 @@ class OfficialAccounts
      * @param string $language
      * @return array
      * @throws ErrorException
+     * @throws Exception
      */
-    public function getUserInfoByOpenid(string $openid, $language = 'zh_CN'):array
+    public function getUserInfoByOpenid(string $openid, $language = 'zh_CN'): array
     {
-        $url = "https://api.weixin.qq.com/cgi-bin/user/info?access_token=%s&openid=%s&lang=%s";
+        $url = 'https://api.weixin.qq.com/cgi-bin/user/info?access_token=%s&openid=%s&lang=%s';
         $url = sprintf($url, $openid, $this->getAccessToken(), $language);
         $request = new SendRequest($url);
         return json_decode($request->get(), true);

@@ -6,13 +6,13 @@ namespace wxl095\we_chat\core\reply;
 
 class Text extends Message
 {
-    protected $xmlStr = "<xml>
+    protected $xmlStr = '<xml>
                           <ToUserName><![CDATA[%s]]></ToUserName>
                           <FromUserName><![CDATA[%s]]></FromUserName>
                           <CreateTime>%d</CreateTime>
                           <MsgType><![CDATA[text]]></MsgType>
                           <Content><![CDATA[%s]]></Content>
-                    </xml>";
+                    </xml>';
 
     protected function create(string &$toUserName, string &$fromUserName, $message)
     {

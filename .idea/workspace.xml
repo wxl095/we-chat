@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a7ad103-3cdd-4ee3-b991-8ee252428f22" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Db.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/Config.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/Event.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/Event.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/OfficialAccounts.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/OfficialAccounts.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/reply/Text.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/reply/Text.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +20,20 @@
     <execution>
       <executable />
     </execution>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -39,6 +58,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
@@ -48,21 +68,21 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="com.jetbrains.php.phpunit.codeGeneration.PhpNewTestDialog.defaultLibrary" value="PHPUnit" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../test" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/core" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/core" />
     </key>
   </component>
   <component name="RunManager" selected="PHP Script.index.php">
@@ -90,7 +110,17 @@
       <list>
         <serviceView>
           <treeState>
-            <expand />
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:outdoor@www.taxingtianji.com" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:outdoor@www.taxingtianji.com" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@1df38505" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+            </expand>
             <select />
           </treeState>
         </serviceView>
@@ -122,7 +152,11 @@
       <workItem from="1578017207550" duration="3495000" />
       <workItem from="1578285034055" duration="4562000" />
       <workItem from="1578359174847" duration="2479000" />
-      <workItem from="1578446172731" duration="1061000" />
+      <workItem from="1578446172731" duration="1800000" />
+      <workItem from="1578532442866" duration="599000" />
+      <workItem from="1578618843050" duration="62000" />
+      <workItem from="1578619076876" duration="1727000" />
+      <workItem from="1578633959253" duration="4971000" />
     </task>
     <task id="LOCAL-00001" summary="wxl">
       <created>1577342297260</created>
@@ -355,7 +389,21 @@
       <option name="project" value="LOCAL" />
       <updated>1578463285175</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="增加发送模板消息方法">
+      <created>1578463341998</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1578463341998</updated>
+    </task>
+    <task id="LOCAL-00035" summary="增加发送模板消息方法">
+      <created>1578463469997</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1578463469997</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -384,6 +432,14 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2552" y="102" width="637" height="819" key="#PHP/0.0.1920.1032/1920.0.1920.1080@1920.0.1920.1080" timestamp="1577327415184" />
+    <state x="2475" y="151" width="800" height="673" key="#SQL_Dialects" timestamp="1578637207297">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2475" y="151" width="800" height="673" key="#SQL_Dialects/0.0.1920.1032/1920.0.1920.1080@1920.0.1920.1080" timestamp="1578637207297" />
+    <state x="2475" y="151" width="800" height="673" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578637343335">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2475" y="151" width="800" height="673" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1032/1920.0.1920.1080@1920.0.1920.1080" timestamp="1578637343335" />
     <state x="2613" y="265" width="524" height="498" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1577328254335">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
@@ -392,11 +448,11 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2570" y="204" width="610" height="619" key="#index.php/0.0.1920.1032/1920.0.1920.1080@1920.0.1920.1080" timestamp="1577327416599" />
-    <state x="2471" y="110" width="807" height="807" key="CommitChangelistDialog2" timestamp="1578463382959">
+    <state x="2471" y="110" width="807" height="807" key="CommitChangelistDialog2" timestamp="1578463469940">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="551" y="105" key="CommitChangelistDialog2/0.0.1920.1032/1920.0.1920.1080@0.0.1920.1032" timestamp="1577695543238" />
-    <state x="2471" y="110" width="807" height="807" key="CommitChangelistDialog2/0.0.1920.1032/1920.0.1920.1080@1920.0.1920.1080" timestamp="1578463382959" />
+    <state x="2471" y="110" width="807" height="807" key="CommitChangelistDialog2/0.0.1920.1032/1920.0.1920.1080@1920.0.1920.1080" timestamp="1578463469940" />
     <state x="306" y="105" width="807" height="807" key="CommitChangelistDialog2/0.0.3840.1032@0.0.3840.1032" timestamp="1577945179491" />
     <state x="2660" y="269" width="424" height="480" key="FileChooserDialogImpl" timestamp="1577352557162">
       <screen x="1920" y="0" width="1920" height="1080" />
@@ -418,18 +474,18 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1872" height="272" key="GridCell.Tab.0.right/0.0.1920.1032/1920.0.1920.1080@1920.0.1920.1080" timestamp="1577352401219" />
-    <state x="2700" y="329" width="364" height="369" key="NewPhpClassDialog" timestamp="1577682275364">
+    <state x="2700" y="329" width="362" height="401" key="NewPhpClassDialog" timestamp="1578637505276">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2700" y="329" width="364" height="369" key="NewPhpClassDialog/0.0.1920.1032/1920.0.1920.1080@1920.0.1920.1080" timestamp="1577682275364" />
-    <state x="2695" y="441" width="359" height="149" key="NewPhpFileDialog" timestamp="1577755740749">
+    <state x="2700" y="329" width="362" height="401" key="NewPhpClassDialog/0.0.1920.1032/1920.0.1920.1080@1920.0.1920.1080" timestamp="1578637505276" />
+    <state x="2695" y="441" width="359" height="153" key="NewPhpFileDialog" timestamp="1578634047926">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2695" y="441" width="359" height="149" key="NewPhpFileDialog/0.0.1920.1032/1920.0.1920.1080@1920.0.1920.1080" timestamp="1577755740749" />
-    <state x="2369" y="151" key="SettingsEditor" timestamp="1577433364389">
+    <state x="2695" y="441" width="359" height="153" key="NewPhpFileDialog/0.0.1920.1032/1920.0.1920.1080@1920.0.1920.1080" timestamp="1578634047926" />
+    <state x="2369" y="151" key="SettingsEditor" timestamp="1578635527037">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2369" y="151" key="SettingsEditor/0.0.1920.1032/1920.0.1920.1080@1920.0.1920.1080" timestamp="1577433364389" />
+    <state x="2369" y="151" key="SettingsEditor/0.0.1920.1032/1920.0.1920.1080@1920.0.1920.1080" timestamp="1578635527037" />
     <state x="2475" y="252" width="800" height="524" key="Vcs.Push.Dialog.v2" timestamp="1578463345646">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
