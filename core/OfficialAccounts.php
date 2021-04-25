@@ -3,6 +3,8 @@
 namespace wxl095\we_chat\core;
 
 use ErrorException;
+use GuzzleHttp\Client;
+use GuzzleHttp\Psr7\Request;
 use http\Exception\RuntimeException;
 use Redis;
 use Exception;
@@ -66,8 +68,10 @@ class OfficialAccounts
         $redis->connect('127.0.0.1');
         $accessToken = $redis->get($this->appId . '_AccessToken');
         if (!$accessToken) {
-            $request = new SendRequest('https://api.weixin.qq.com/cgi-bin/token', ['grant_type' => 'client_credential', 'appid' => $this->appId, 'secret' => $this->secret]);
-            $result = $request->post();
+            $request = new Request('POST', 'https://api.weixin.qq.com/cgi-bin/token', [], http_build_query(['grant_type' => 'client_credential', 'appid' => $this->appId, 'secret' => $this->secret]));
+            $client = new Client();
+            $response = $client->send($request, ['http_errors' => false]);
+            $result = $response->getBody()->getContents();;
             $result = json_decode($result, true);
             if (isset($result['errcode'])) {
                 switch ($result['errcode']) {
