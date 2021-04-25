@@ -3,12 +3,13 @@
 namespace wxl095\we_chat\core;
 
 use ErrorException;
+use http\Exception\RuntimeException;
 use Redis;
 use Exception;
 
 class OfficialAccounts
 {
-    const ErrorLogFile = __DIR__ . '/OfficialAccountsError.log';
+    const ERROR_LOG_FILE = __DIR__ . '/OfficialAccountsError.log';
     protected $appId;
     protected $secret;
     protected $token;
@@ -51,17 +52,12 @@ class OfficialAccounts
         $tmpStr = implode($tmpArr);
         $tmpStr = sha1($tmpStr);
 
-        if ($tmpStr == $signature) {
-            return true;
-        } else {
-            return false;
-        }
+        return $tmpStr === $signature;
     }
 
     /**
      * 获取access_token
      * @return string
-     * @throws ErrorException
      * @throws Exception
      */
     public function getAccessToken(): string
@@ -88,7 +84,7 @@ class OfficialAccounts
                         $this->writeLog('获取access_token失败', '40164', '调用接口的IP地址不在白名单中，请在接口IP白名单中进行设置。');
                         break;
                 }
-                throw new ErrorException('获取accessToken失败');
+                throw new RuntimeException('获取accessToken失败');
             }
             $accessToken = $result['access_token'];
             $redis->set($this->appId . '_AccessToken', $accessToken, 7200);
@@ -103,13 +99,13 @@ class OfficialAccounts
      * @throws ErrorException
      * @throws Exception
      */
-    public function createMenu(array $menu)
+    public function createMenu(array $menu): bool
     {
         $accessToken = $this->getAccessToken();
         $request = new SendRequest("https://api.weixin.qq.com/cgi-bin/menu/create?access_token=$accessToken", json_encode($menu, JSON_UNESCAPED_UNICODE));
 
         $result = json_decode($request->post(), true);
-        if ($result['errcode'] != 0 && $result['errmsg'] !== 'ok') {
+        if ((int)$result['errcode'] !== 0 && $result['errmsg'] !== 'ok') {
             $this->writeLog('自定义菜单创建失败', $result['errcode'], $result['errmsg']);
             return false;
         }
@@ -128,7 +124,7 @@ class OfficialAccounts
 
         switch ($xmlArray['MsgType']) {
             case 'event':
-                new Event($xmlArray);
+//                new Event($xmlArray);
                 break;
         }
     }
@@ -141,7 +137,7 @@ class OfficialAccounts
      */
     private function writeLog(string $title, string $errorCode, string $errorMessage)
     {
-        file_put_contents(self::ErrorLogFile, date('Y-m-d H:i:s') . '  appid为：' . $this->appId . '的账号' . $title . '  errorCode:' . $errorCode . "\r\n" . 'errorMessage:' . $errorMessage . "\r\n\r\n");
+        file_put_contents(self::ERROR_LOG_FILE, date('Y-m-d H:i:s') . '  appid为：' . $this->appId . '的账号' . $title . '  errorCode:' . $errorCode . "\r\n" . 'errorMessage:' . $errorMessage . "\r\n\r\n");
     }
 
 

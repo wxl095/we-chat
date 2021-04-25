@@ -9,14 +9,16 @@
       "email": "297750182@qq.com"
     }
   ],
-  "minimum-stability": "dev",
+  "minimum-stability": "stable",
   "require": {
     "ext-json": "*",
     "ext-curl": "*",
     "ext-libxml": "*",
     "ext-simplexml": "*",
     "ext-redis": "*",
-    "ext-pdo": "*"
+    "ext-pdo": "*",
+    "ext-http": "*",
+    "guzzlehttp/guzzle": "7.4.x-dev"
   },
   "autoload": {
     "psr-4": {

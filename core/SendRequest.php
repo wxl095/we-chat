@@ -1,6 +1,7 @@
 <?php
 namespace wxl095\we_chat\core;
 use Exception;
+use http\Exception\InvalidArgumentException;
 
 /**
  * Created by PhpStorm
@@ -25,7 +26,9 @@ class SendRequest
 	public function __construct(string $url, $data='')
 	{
 		$this->request = curl_init();
-		if (empty($url)) throw new Exception('url地址不能为空');
+		if (empty($url)) {
+            throw new InvalidArgumentException('url地址不能为空');
+        }
 		$this->data = $data;
 		$this->url = $url;
 	}

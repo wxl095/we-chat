@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a7ad103-3cdd-4ee3-b991-8ee252428f22" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Db.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/Config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/we-chat.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/we-chat.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/Event.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/Event.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/OfficialAccounts.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/OfficialAccounts.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/reply/Text.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/reply/Text.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/SendRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/SendRequest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,7 +19,7 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution>
-      <executable />
+      <executable path="composer" />
     </execution>
   </component>
   <component name="DatabaseView">
@@ -45,20 +46,34 @@
       </set>
     </option>
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.2" />
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="0xil7y9k" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.2">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-client" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-factory" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
+    </include_path>
+  </component>
   <component name="ProjectId" id="1VSxuOoC3zAKXaokgdbHqlB9xi6" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
@@ -75,7 +90,9 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -85,7 +102,7 @@
       <recent name="$PROJECT_DIR$/core" />
     </key>
   </component>
-  <component name="RunManager" selected="PHP Script.index.php">
+  <component name="RunManager" selected="PHP 脚本.index.php">
     <configuration name="OfficialAccountsTest.testVerification" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <CommandLine>
         <PhpTestInterpreterSettings>
@@ -100,7 +117,6 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="PHP Script.index.php" />
         <item itemvalue="PHPUnit.OfficialAccountsTest.testVerification" />
       </list>
     </recent_temporary>
@@ -127,6 +143,7 @@
       </list>
     </option>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -157,6 +174,7 @@
       <workItem from="1578618843050" duration="62000" />
       <workItem from="1578619076876" duration="1727000" />
       <workItem from="1578633959253" duration="4971000" />
+      <workItem from="1619334202674" duration="2443000" />
     </task>
     <task id="LOCAL-00001" summary="wxl">
       <created>1577342297260</created>
@@ -407,102 +425,23 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="wxl" />
     <MESSAGE value="增加发送模板消息方法" />
     <option name="LAST_COMMIT_MESSAGE" value="增加发送模板消息方法" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="2465" y="171" width="824" height="680" key="#CLI_Interpreters" timestamp="1577327243657">
-      <screen x="1920" y="0" width="1920" height="1080" />
-    </state>
-    <state x="2465" y="171" width="824" height="680" key="#CLI_Interpreters/0.0.1920.1032/1920.0.1920.1080@1920.0.1920.1080" timestamp="1577327243657" />
-    <state x="2475" y="177" width="800" height="673" key="#Deployment" timestamp="1577677003074">
-      <screen x="1920" y="0" width="1920" height="1080" />
-    </state>
-    <state x="2475" y="177" width="800" height="673" key="#Deployment/0.0.1920.1032/1920.0.1920.1080@1920.0.1920.1080" timestamp="1577677003074" />
-    <state x="2535" y="118" width="694" height="791" key="#OfficialAccountsTest.testVerification" timestamp="1577327251031">
-      <screen x="1920" y="0" width="1920" height="1080" />
-    </state>
-    <state x="2535" y="118" width="694" height="791" key="#OfficialAccountsTest.testVerification/0.0.1920.1032/1920.0.1920.1080@1920.0.1920.1080" timestamp="1577327251031" />
-    <state x="2552" y="102" width="637" height="819" key="#PHP" timestamp="1577327415184">
-      <screen x="1920" y="0" width="1920" height="1080" />
-    </state>
-    <state x="2552" y="102" width="637" height="819" key="#PHP/0.0.1920.1032/1920.0.1920.1080@1920.0.1920.1080" timestamp="1577327415184" />
-    <state x="2475" y="151" width="800" height="673" key="#SQL_Dialects" timestamp="1578637207297">
-      <screen x="1920" y="0" width="1920" height="1080" />
-    </state>
-    <state x="2475" y="151" width="800" height="673" key="#SQL_Dialects/0.0.1920.1032/1920.0.1920.1080@1920.0.1920.1080" timestamp="1578637207297" />
-    <state x="2475" y="151" width="800" height="673" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578637343335">
-      <screen x="1920" y="0" width="1920" height="1080" />
-    </state>
-    <state x="2475" y="151" width="800" height="673" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1032/1920.0.1920.1080@1920.0.1920.1080" timestamp="1578637343335" />
-    <state x="2613" y="265" width="524" height="498" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1577328254335">
-      <screen x="1920" y="0" width="1920" height="1080" />
-    </state>
-    <state x="2613" y="265" width="524" height="498" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1032/1920.0.1920.1080@1920.0.1920.1080" timestamp="1577328254335" />
-    <state x="2570" y="204" width="610" height="619" key="#index.php" timestamp="1577327416599">
-      <screen x="1920" y="0" width="1920" height="1080" />
-    </state>
-    <state x="2570" y="204" width="610" height="619" key="#index.php/0.0.1920.1032/1920.0.1920.1080@1920.0.1920.1080" timestamp="1577327416599" />
-    <state x="2471" y="110" width="807" height="807" key="CommitChangelistDialog2" timestamp="1578463469940">
-      <screen x="1920" y="0" width="1920" height="1080" />
-    </state>
-    <state x="551" y="105" key="CommitChangelistDialog2/0.0.1920.1032/1920.0.1920.1080@0.0.1920.1032" timestamp="1577695543238" />
-    <state x="2471" y="110" width="807" height="807" key="CommitChangelistDialog2/0.0.1920.1032/1920.0.1920.1080@1920.0.1920.1080" timestamp="1578463469940" />
-    <state x="306" y="105" width="807" height="807" key="CommitChangelistDialog2/0.0.3840.1032@0.0.3840.1032" timestamp="1577945179491" />
-    <state x="2660" y="269" width="424" height="480" key="FileChooserDialogImpl" timestamp="1577352557162">
-      <screen x="1920" y="0" width="1920" height="1080" />
-    </state>
-    <state x="2660" y="269" width="424" height="480" key="FileChooserDialogImpl/0.0.1920.1032/1920.0.1920.1080@1920.0.1920.1080" timestamp="1577352557162" />
-    <state width="1872" height="272" key="GridCell.Tab.0.bottom" timestamp="1577352401219">
-      <screen x="1920" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1872" height="272" key="GridCell.Tab.0.bottom/0.0.1920.1032/1920.0.1920.1080@1920.0.1920.1080" timestamp="1577352401219" />
-    <state width="1872" height="272" key="GridCell.Tab.0.center" timestamp="1577352401219">
-      <screen x="1920" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1872" height="272" key="GridCell.Tab.0.center/0.0.1920.1032/1920.0.1920.1080@1920.0.1920.1080" timestamp="1577352401219" />
-    <state width="1872" height="272" key="GridCell.Tab.0.left" timestamp="1577352401219">
-      <screen x="1920" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1872" height="272" key="GridCell.Tab.0.left/0.0.1920.1032/1920.0.1920.1080@1920.0.1920.1080" timestamp="1577352401219" />
-    <state width="1872" height="272" key="GridCell.Tab.0.right" timestamp="1577352401219">
-      <screen x="1920" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1872" height="272" key="GridCell.Tab.0.right/0.0.1920.1032/1920.0.1920.1080@1920.0.1920.1080" timestamp="1577352401219" />
-    <state x="2700" y="329" width="362" height="401" key="NewPhpClassDialog" timestamp="1578637505276">
-      <screen x="1920" y="0" width="1920" height="1080" />
-    </state>
-    <state x="2700" y="329" width="362" height="401" key="NewPhpClassDialog/0.0.1920.1032/1920.0.1920.1080@1920.0.1920.1080" timestamp="1578637505276" />
-    <state x="2695" y="441" width="359" height="153" key="NewPhpFileDialog" timestamp="1578634047926">
-      <screen x="1920" y="0" width="1920" height="1080" />
-    </state>
-    <state x="2695" y="441" width="359" height="153" key="NewPhpFileDialog/0.0.1920.1032/1920.0.1920.1080@1920.0.1920.1080" timestamp="1578634047926" />
-    <state x="2369" y="151" key="SettingsEditor" timestamp="1578635527037">
-      <screen x="1920" y="0" width="1920" height="1080" />
-    </state>
-    <state x="2369" y="151" key="SettingsEditor/0.0.1920.1032/1920.0.1920.1080@1920.0.1920.1080" timestamp="1578635527037" />
-    <state x="2475" y="252" width="800" height="524" key="Vcs.Push.Dialog.v2" timestamp="1578463345646">
-      <screen x="1920" y="0" width="1920" height="1080" />
-    </state>
-    <state x="555" y="241" key="Vcs.Push.Dialog.v2/0.0.1920.1032/1920.0.1920.1080@0.0.1920.1032" timestamp="1577695545527" />
-    <state x="2475" y="252" width="800" height="524" key="Vcs.Push.Dialog.v2/0.0.1920.1032/1920.0.1920.1080@1920.0.1920.1080" timestamp="1578463345646" />
-    <state x="320" y="241" width="800" height="524" key="Vcs.Push.Dialog.v2/0.0.3840.1032@0.0.3840.1032" timestamp="1577945180953" />
-    <state x="2652" y="143" width="539" height="742" key="com.jetbrains.php.test.PhpNewTestDialog" timestamp="1577327181770">
-      <screen x="1920" y="0" width="1920" height="1080" />
-    </state>
-    <state x="2652" y="143" width="539" height="742" key="com.jetbrains.php.test.PhpNewTestDialog/0.0.1920.1032/1920.0.1920.1080@1920.0.1920.1080" timestamp="1577327181770" />
-    <state x="2777" y="247" width="196" height="529" key="ftp.server.browser" timestamp="1577676996289">
-      <screen x="1920" y="0" width="1920" height="1080" />
-    </state>
-    <state x="2777" y="247" width="196" height="529" key="ftp.server.browser/0.0.1920.1032/1920.0.1920.1080@1920.0.1920.1080" timestamp="1577676996289" />
-    <state x="2747" y="412" width="256" height="203" key="publish.login" timestamp="1577676975851">
-      <screen x="1920" y="0" width="1920" height="1080" />
-    </state>
-    <state x="2747" y="412" width="256" height="203" key="publish.login/0.0.1920.1032/1920.0.1920.1080@1920.0.1920.1080" timestamp="1577676975851" />
   </component>
 </project>
