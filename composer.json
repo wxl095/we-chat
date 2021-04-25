@@ -1,8 +1,8 @@
 {
-  "name": "wxl095/we-chat",
-  "description": "个人学习项目",
+  "name": "wxl/we-chat",
+  "description": "微信公众号",
   "type": "library",
-  "license": "apache-2.0",
+  "license": "MIT",
   "authors": [
     {
       "name": "wxl",
