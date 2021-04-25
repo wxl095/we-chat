@@ -34,6 +34,7 @@ class OfficialAccounts
         if ($this->checkSignature()) {
             return $_GET['echostr'];
         }
+        return '';
     }
 
     /**
@@ -46,8 +47,7 @@ class OfficialAccounts
         $timestamp = $_GET["timestamp"];
         $nonce = $_GET["nonce"];
 
-        $token = $this->token;
-        $tmpArr = array($token, $timestamp, $nonce);
+        $tmpArr = [$this->token, $timestamp, $nonce];
         sort($tmpArr, SORT_STRING);
         $tmpStr = implode($tmpArr);
         $tmpStr = sha1($tmpStr);
@@ -154,16 +154,16 @@ class OfficialAccounts
         $url = 'https://api.weixin.qq.com/cgi-bin/qrcode/create?access_token=%s';
         $accessToken = $this->getAccessToken();
         $url = sprintf($url, $accessToken);
-        if ($type == 'int') {
+        if ($type === 'int') {
             $data = '{"action_name": "QR_LIMIT_SCENE", "action_info": {"scene": {"scene_id": %u}}}';
         }
-        if ($type == 'str') {
+        if ($type === 'str') {
             $data = '{"action_name": "QR_LIMIT_STR_SCENE", "action_info": {"scene": {"scene_str": "%s"}}}';
         }
         $data = sprintf($data, $scene_param);
         $request = new SendRequest($url, $data);
         $result = json_decode($request->post(), true);
-        if (isset($result['ticket']) && isset($result['url'])) {
+        if (isset($result['ticket'], $result['url'])) {
             return $result;
         }
         return false;
@@ -177,7 +177,7 @@ class OfficialAccounts
      * @return bool
      * @throws Exception
      */
-    public function saveQrCode(string $ticket, string $file_name = '', string $save_path = './')
+    public function saveQrCode(string $ticket, string $file_name = '', string $save_path = './'): bool
     {
         $url = 'https://mp.weixin.qq.com/cgi-bin/showqrcode?ticket=%s';
         $url = sprintf($url, urlencode($ticket));
@@ -202,7 +202,7 @@ class OfficialAccounts
      * @throws ErrorException
      * @throws Exception
      */
-    public function sendTemplateMessage(string $openid, string $template_id, string $target_url, string $top_color, array $content)
+    public function sendTemplateMessage(string $openid, string $template_id, string $target_url, string $top_color, array $content): bool
     {
         $url = 'https://api.weixin.qq.com/cgi-bin/message/template/send?access_token=%s';
         $url = sprintf($url, $this->getAccessToken());

@@ -17,8 +17,7 @@
     "ext-simplexml": "*",
     "ext-redis": "*",
     "ext-pdo": "*",
-    "ext-http": "*",
-    "guzzlehttp/guzzle": "7.4.x-dev"
+    "ext-http": "*"
   },
   "autoload": {
     "psr-4": {
