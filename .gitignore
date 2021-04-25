@@ -1,4 +1,4 @@
-/vendor/
+/vendor
 /.idea
-/OfficialAccountsError.log
-/composer.lock
+OfficialAccountsError.log
+composer.lock
