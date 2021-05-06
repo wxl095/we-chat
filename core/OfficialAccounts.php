@@ -36,7 +36,6 @@ class OfficialAccounts
         if ($this->checkSignature()) {
             return $_GET['echostr'];
         }
-        return '';
     }
 
     /**
