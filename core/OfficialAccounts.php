@@ -60,7 +60,7 @@ class OfficialAccounts
     /**
      * 获取access_token
      * @return string
-     * @throws Exception
+     * @throws Exception|\GuzzleHttp\Exception\GuzzleException
      */
     public function getAccessToken(): string
     {
@@ -87,8 +87,9 @@ class OfficialAccounts
                     case 40164:
                         $this->writeLog('获取access_token失败', '40164', '调用接口的IP地址不在白名单中，请在接口IP白名单中进行设置。');
                         break;
+                    default:
+                        throw new RuntimeException('获取accessToken失败');
                 }
-                throw new RuntimeException('获取accessToken失败');
             }
             $accessToken = $result['access_token'];
             $redis->set($this->appId . '_AccessToken', $accessToken, 7200);
