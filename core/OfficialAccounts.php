@@ -19,9 +19,8 @@ class OfficialAccounts
     /**
      * OfficialAccounts constructor.
      */
-    public function __construct()
+    public function __construct(Config $config)
     {
-        $config = new Config();
         $this->appId = $config->getAppId();
         $this->secret = $config->getSecret();
         $this->token = $config->getToken();
@@ -101,8 +100,7 @@ class OfficialAccounts
      * 创建自定义菜单
      * @param array $menu
      * @return bool
-     * @throws ErrorException
-     * @throws Exception
+     * @throws Exception|\GuzzleHttp\Exception\GuzzleException
      */
     public function createMenu(array $menu): bool
     {
