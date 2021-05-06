@@ -8,6 +8,7 @@ use GuzzleHttp\Psr7\Request;
 use http\Exception\RuntimeException;
 use Redis;
 use Exception;
+use wechat\core\reply\Text;
 
 class OfficialAccounts
 {
@@ -129,6 +130,9 @@ class OfficialAccounts
             case 'event':
 //                new Event($xmlArray);
                 break;
+            case 'text':
+                (new Text($xmlArray))->reply($xmlArray['t']);
+                break;
         }
     }
 
@@ -149,8 +153,7 @@ class OfficialAccounts
      * @param $scene_param
      * @param string $type
      * @return bool|array
-     * @throws ErrorException
-     * @throws Exception
+     * @throws Exception|\GuzzleHttp\Exception\GuzzleException
      */
     public function getQRLimitScene($scene_param, $type = 'int')
     {
@@ -202,8 +205,7 @@ class OfficialAccounts
      * @param string $top_color
      * @param array $content
      * @return bool
-     * @throws ErrorException
-     * @throws Exception
+     * @throws Exception|\GuzzleHttp\Exception\GuzzleException
      */
     public function sendTemplateMessage(string $openid, string $template_id, string $target_url, string $top_color, array $content): bool
     {
@@ -229,8 +231,7 @@ class OfficialAccounts
      * @param string $openid
      * @param string $language
      * @return array
-     * @throws ErrorException
-     * @throws Exception
+     * @throws Exception|\GuzzleHttp\Exception\GuzzleException
      */
     public function getUserInfoByOpenid(string $openid, $language = 'zh_CN'): array
     {

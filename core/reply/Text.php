@@ -14,13 +14,13 @@ class Text extends Message
                           <Content><![CDATA[%s]]></Content>
                     </xml>';
 
-    protected function create(string &$toUserName, string &$fromUserName, $message)
+    protected function create(string $toUserName, string $fromUserName, $message)
     {
         file_put_contents('./reply.txt', sprintf($this->xmlStr, $toUserName, $fromUserName, time(), $message));
         return sprintf($this->xmlStr, $toUserName, $fromUserName, time(), $message);
     }
 
-    public function reply(string &$toUserName, string &$fromUserName, $message)
+    public function reply(string $toUserName, string $fromUserName, $message)
     {
         echo $this->create($toUserName, $fromUserName, $message);
     }
