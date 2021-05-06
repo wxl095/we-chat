@@ -1,5 +1,5 @@
 <?php
-namespace wxl095\we_chat\core;
+namespace wechat\core;
 use Exception;
 use http\Exception\InvalidArgumentException;
 

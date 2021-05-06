@@ -1,6 +1,6 @@
 <?php
 
-namespace wxl095\we_chat\core;
+namespace wechat\core;
 
 use ErrorException;
 use GuzzleHttp\Client;

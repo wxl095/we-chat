@@ -1,7 +1,7 @@
 <?php
 
 
-namespace wxl095\we_chat\core\reply;
+namespace wechat\core\reply;
 
 
 class Text extends Message

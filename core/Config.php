@@ -1,6 +1,6 @@
 <?php
 
-namespace wxl095\we_chat\core;
+namespace wechat\core;
 class Config
 {
     private $appId = 'wx95525cf2481f57b2';

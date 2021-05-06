@@ -1,11 +1,11 @@
 <?php
 
 
-namespace wxl095\we_chat\core;
+namespace wechat\core;
 
 
 use ErrorException;
-use wxl095\we_chat\core\reply\Text;
+use wechat\core\reply\Text;
 
 class Event
 {

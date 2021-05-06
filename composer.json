@@ -1,5 +1,5 @@
 {
-  "name": "wxl/we-chat",
+  "name": "wxl/wechat",
   "description": "微信公众号",
   "type": "library",
   "license": "MIT",
@@ -21,7 +21,7 @@
   },
   "autoload": {
     "psr-4": {
-      "wxl095\\we_chat\\core\\": "core"
+      "wechat\\core\\": "core"
     }
   }
 }
