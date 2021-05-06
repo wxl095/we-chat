@@ -17,7 +17,6 @@
     "ext-simplexml": "*",
     "ext-redis": "*",
     "ext-pdo": "*",
-    "ext-http": "*",
     "guzzlehttp/guzzle": "^7.3",
     "vlucas/phpdotenv": "^5.3"
   },
